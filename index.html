@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa Online</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+        <!-- BUSCADOR Y CUENTAS -->
+
+    <div class="topbar">
+    <div class="search">
+      <input type="text" placeholder="Buscar">
+      <button>&#128269;</button>
+    </div>
+    <div class="account-cart">
+      <a href="#">Crear cuenta</a> |
+      <a href="#">Iniciar sesión</a>
+      <a href="#">&#128722; 0</a>
+    </div>
+  </div>
+
+                <!-- HEADER -->
+
+  <header>
+    <div class="logo">IND.CASBAS</div>
+    <nav class="main-nav">
+      <a href="#" class="active">INICIO</a>
+      <a href="#">PRODUCTOS</a>
+      <a href="#">CONTACTO</a>
+      <a href="#">TÉRMINOS Y CONDICIONES</a>
+      <a href="#">GUÍA DE TALLES</a>
+    </nav>
+  </header>
+
+                <!-- SLIDER -->
+
+
+  <section class="slider">
+    <div class="slide">
+        <img src="img/slideropa.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+        <img src="img/slidedos.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+        <img src="img/slidetres.jpg" alt="Slide 3">
+    </div>
+    
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+
+                    <!-- PRODUCTOS -->
+
+  <section class="productos">
+    <div class="producto">
+      <div class="nuevo">NUEVO</div>
+      <img src="img/blackhoodie.jpg" alt="Black Hoodie">
+      <div class="info">
+        <h3>BLACK HOODIE "22XCLUSIVE"</h3>
+        <div class="precio">$85.000,00</div>
+        <div class="cuotas">3 cuotas sin interés de $28.333,33</div>
+        <button>AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+    <div class="producto">
+      <div class="nuevo">NUEVO</div>
+      <img src="img/remeranegra.jpg" alt="Remera Doble Manga">
+      <div class="info">
+        <h3>REMERA NEGRA DOBLE MANGA PESADA "NO…"</h3>
+        <div class="precio">$66.000,00</div>
+        <div class="cuotas">3 cuotas sin interés de $22.000,00</div>
+        <button>QUIERO ANOTARME EN LA LISTA DE ESPERA</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- debajo de productos -->
+  <section class="banner-crew">
+    <div class="image"><img src="img/carpenter.png" alt="Camisa Carpenter"></div>
+    <div class="text">
+      <h2>CAMISA CARPENTER &amp; WASHED</h2>
+      <button>GET THE OUTFIT</button>
+    </div>
+  </section>
+
+  <section class="crew-banner">
+    <div class="text">
+      <h2>BE PART OF THE CREW.</h2>
+      <button>LAST UNITS</button>
+    </div>
+    <div class="image"><img src="img/crew.png" alt="Be Part"></div>
+  </section>
+
+  <div class="ig-handle">
+    <span>@IND.CASBAS</span>
+  </div>
+
+  <section class="features">
+    <div class="feature-item">
+      <h4>🛻 ENVIAMOS TU COMPRA</h4>
+      <p>Entregas a todo el país</p>
+    </div>
+    <div class="feature-item">
+      <h4>💳 PAGÁ COMO QUIERAS</h4>
+      <p>Tarjetas de crédito o efectivo</p>
+    </div>
+    <div class="feature-item">
+      <h4>🔒 COMPRÁ CON SEGURIDAD</h4>
+      <p>Tus datos siempre protegidos</p>
+    </div>
+  </section>
+
+                            <!-- footer -->
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-nav">
+        <h4>NAVEGACIÓN</h4>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Guía de talles</a>
+      </div>
+      <div class="footer-social">
+        <h4>REDES SOCIALES</h4>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-newsletter">
+        <h4>NEWSLETTER</h4>
+        <input type="email" placeholder="Email">
+        <button>&#9993;</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
