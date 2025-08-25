@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - IND.CASBAS</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+
+    <!-- BUSCADOR Y CUENTAS -->
+    <div class="topbar">
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <button>&#128269;</button>
+        </div>
+        <div class="account-cart">
+            <a href="#">Crear cuenta</a> |
+            <a href="#">Iniciar sesión</a>
+            <a href="#" id="cart-count">🛒 0</a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">IND.CASBAS</div>
+        <nav class="main-nav">
+            <a href="../index.html">INICIO</a>
+            <a href="#">PRODUCTOS</a>
+            <a href="#">CONTACTO</a>
+            <a href="#">TÉRMINOS Y CONDICIONES</a>
+            <a href="#">GUÍA DE TALLES</a>
+        </nav>
+    </header>
+
+    <!-- CARRITO DE COMPRAS -->
+    <main class="cart-container">
+        <div class="cart-header">
+            <h1>Carrito de Compras</h1>
+            <a href="../index.html" class="continue-shopping">← Continuar comprando</a>
+        </div>
+
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items">
+                <!-- Los items del carrito se cargarán dinámicamente -->
+            </div>
+
+            <div class="cart-summary">
+                <h3>Resumen de Compra</h3>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Envío:</span>
+                    <span id="shipping">$0</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">$0</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">PROCEDER AL PAGO</button>
+                <div class="payment-methods">
+                    <p>Métodos de pago aceptados:</p>
+                    <div class="payment-icons">
+                        <span>💳</span>
+                        <span>🏦</span>
+                        <span>📱</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="empty-cart" style="display: none;">
+            <div class="empty-cart-content">
+                <h2>Tu carrito está vacío</h2>
+                <p>Agrega algunos productos para comenzar tu compra</p>
+                <a href="../index.html" class="shop-now-btn">IR A LA TIENDA</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-nav">
+                <h4>NAVEGACIÓN</h4>
+                <a href="../index.html">Inicio</a>
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Guía de talles</a>
+            </div>
+            <div class="footer-social">
+                <h4>REDES SOCIALES</h4>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>NEWSLETTER</h4>
+                <input type="email" placeholder="Email">
+                <button>&#9993;</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>

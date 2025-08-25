@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa Online</title>
+    <title>IND.CASBAS - Tienda de Ropa Online | Hoodies y Remeras Exclusivas</title>
+    <meta name="description" content="Descubre la nueva colección de IND.CASBAS. Hoodies y remeras exclusivas con diseño único. Envío gratis en compras superiores a $50.000">
+    <meta name="keywords" content="ropa, hoodies, remeras, IND.CASBAS, moda, streetwear">
+    <meta name="author" content="IND.CASBAS">
+    <meta property="og:title" content="IND.CASBAS - Tienda de Ropa Online">
+    <meta property="og:description" content="Descubre la nueva colección de IND.CASBAS. Hoodies y remeras exclusivas con diseño único.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://indcasbas.com">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,13 +22,13 @@
 
     <div class="topbar">
     <div class="search">
-      <input type="text" placeholder="Buscar">
-      <button>&#128269;</button>
+      <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+      <button type="button" aria-label="Buscar">&#128269;</button>
     </div>
     <div class="account-cart">
-      <a href="#">Crear cuenta</a> |
-      <a href="#">Iniciar sesión</a>
-      <a href="#">&#128722; 0</a>
+      <a href="#" id="create-account">Crear cuenta</a> |
+      <a href="#" id="login">Iniciar sesión</a>
+      <a href="pages/cart.html">&#128722; 0</a>
     </div>
   </div>
 
@@ -27,35 +37,35 @@
   <header>
     <div class="logo">IND.CASBAS</div>
     <nav class="main-nav">
-      <a href="#" class="active">INICIO</a>
-      <a href="#">PRODUCTOS</a>
-      <a href="#">CONTACTO</a>
-      <a href="#">TÉRMINOS Y CONDICIONES</a>
-      <a href="#">GUÍA DE TALLES</a>
+      <a href="index.html" class="active">INICIO</a>
+      <a href="pages/products.html">PRODUCTOS</a>
+      <a href="pages/contact.html">CONTACTO</a>
+      <a href="pages/terms.html">TÉRMINOS Y CONDICIONES</a>
+      <a href="pages/sizes.html">GUÍA DE TALLES</a>
     </nav>
   </header>
 
                 <!-- SLIDER -->
 
 
-  <section class="slider">
+  <section class="slider" role="region" aria-label="Carrusel de productos">
     <div class="slide">
-        <img src="img/slideropa.jpg" alt="Slide 1">
+        <img src="img/slideropa.jpg" alt="Nueva colección IND.CASBAS - Hoodies exclusivos">
     </div>
     <div class="slide">
-        <img src="img/slidedos.jpg" alt="Slide 2">
+        <img src="img/slidedos.jpg" alt="Remeras de diseño único - IND.CASBAS">
     </div>
     <div class="slide">
-        <img src="img/slidetres.jpg" alt="Slide 3">
+        <img src="img/slidetres.jpg" alt="Streetwear de calidad premium - IND.CASBAS">
     </div>
     
-    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    <button class="prev" onclick="plusSlides(-1)" aria-label="Imagen anterior">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)" aria-label="Imagen siguiente">&#10095;</button>
     
-    <div class="dots">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+    <div class="dots" role="tablist" aria-label="Navegación del carrusel">
+      <span class="dot" onclick="currentSlide(1)" role="tab" aria-label="Ir a imagen 1"></span>
+      <span class="dot" onclick="currentSlide(2)" role="tab" aria-label="Ir a imagen 2"></span>
+      <span class="dot" onclick="currentSlide(3)" role="tab" aria-label="Ir a imagen 3"></span>
     </div>
   </section>
 
@@ -80,7 +90,7 @@
         <h3>REMERA NEGRA DOBLE MANGA PESADA "NO…"</h3>
         <div class="precio">$66.000,00</div>
         <div class="cuotas">3 cuotas sin interés de $22.000,00</div>
-        <button>QUIERO ANOTARME EN LA LISTA DE ESPERA</button>
+        <button>AGREGAR AL CARRITO</button>
       </div>
     </div>
   </section>
@@ -127,22 +137,53 @@
     <div class="footer-main">
       <div class="footer-nav">
         <h4>NAVEGACIÓN</h4>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Contacto</a>
-        <a href="#">Términos y condiciones</a>
-        <a href="#">Guía de talles</a>
+        <a href="index.html">Inicio</a>
+        <a href="pages/products.html">Productos</a>
+        <a href="pages/contact.html">Contacto</a>
+        <a href="pages/terms.html">Términos y condiciones</a>
+        <a href="pages/sizes.html">Guía de talles</a>
       </div>
       <div class="footer-social">
         <h4>REDES SOCIALES</h4>
-        <a href="#">Instagram</a>
+        <a href="https://instagram.com/ind.casbas" target="_blank">Instagram</a>
       </div>
       <div class="footer-newsletter">
         <h4>NEWSLETTER</h4>
-        <input type="email" placeholder="Email">
-        <button>&#9993;</button>
+        <input type="email" placeholder="Email" id="newsletter-email">
+        <button id="newsletter-btn">&#9993;</button>
       </div>
     </div>
   </footer>
+
+  <!-- MODAL DE AUTENTICACIÓN -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="login-form" class="auth-form">
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="#" id="show-register">Crear cuenta</a></p>
+      </div>
+      <div id="register-form" class="auth-form" style="display: none;">
+        <h2>Crear Cuenta</h2>
+        <form>
+          <input type="text" placeholder="Nombre completo" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Contraseña" required>
+          <input type="password" placeholder="Confirmar contraseña" required>
+          <button type="submit">Crear Cuenta</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="#" id="show-login">Iniciar sesión</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript para funcionalidad -->
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>

@@ -1,0 +1,271 @@
+/* ===== CONTACT PAGE STYLES ===== */
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.contact-content {
+    line-height: 1.6;
+}
+
+.contact-section {
+    margin-bottom: 50px;
+}
+
+.contact-section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Instagram Section */
+.instagram-section {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-card {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.instagram-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.instagram-card h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.instagram-card p {
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.instagram-btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Email Section */
+.email-section {
+    display: flex;
+    justify-content: center;
+}
+
+.email-card {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.email-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.email-card h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.email-card p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.email-btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.email-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* FAQ Section */
+.faq-section {
+    display: grid;
+    gap: 20px;
+}
+
+.faq-item {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.faq-item p {
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+.faq-item a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.faq-item a:hover {
+    color: #ccc;
+}
+
+/* Hours Section */
+.hours-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hours-card {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.hours-card h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.hours-card p {
+    color: #ccc;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Company Info */
+.company-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-item h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info-item p {
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px 15px;
+    }
+    
+    .contact-header h1 {
+        font-size: 2em;
+    }
+    
+    .contact-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .instagram-card,
+    .email-card,
+    .hours-card {
+        padding: 20px;
+    }
+    
+    .company-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .contact-section h2 {
+        font-size: 1.3em;
+    }
+    
+    .instagram-card,
+    .email-card,
+    .hours-card {
+        padding: 15px;
+    }
+}

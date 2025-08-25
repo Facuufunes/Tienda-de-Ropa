@@ -1,0 +1,92 @@
+/* ===== TERMS PAGE STYLES ===== */
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.terms-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.terms-header p {
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.terms-content {
+    line-height: 1.6;
+}
+
+.terms-section {
+    margin-bottom: 40px;
+}
+
+.terms-section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    border-left: 4px solid #fff;
+    padding-left: 15px;
+}
+
+.terms-section p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.terms-section ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.terms-section li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.terms-section a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.terms-section a:hover {
+    color: #ccc;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 20px 15px;
+    }
+    
+    .terms-header h1 {
+        font-size: 2em;
+    }
+    
+    .terms-section h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .terms-section h2 {
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - IND.CASBAS</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+
+    <!-- BUSCADOR Y CUENTAS -->
+    <div class="topbar">
+        <div class="search">
+            <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <button type="button" aria-label="Buscar">&#128269;</button>
+        </div>
+        <div class="account-cart">
+            <a href="#" id="create-account">Crear cuenta</a> |
+            <a href="#" id="login">Iniciar sesión</a>
+            <a href="cart.html">🛒 0</a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">IND.CASBAS</div>
+        <nav class="main-nav">
+            <a href="../index.html">INICIO</a>
+            <a href="products.html" class="active">PRODUCTOS</a>
+            <a href="contact.html">CONTACTO</a>
+            <a href="terms.html">TÉRMINOS Y CONDICIONES</a>
+            <a href="sizes.html">GUÍA DE TALLES</a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="products-container">
+        <div class="products-header">
+            <h1>Nuestros Productos</h1>
+            <p>Descubre nuestra colección exclusiva de streetwear</p>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">TODOS</button>
+            <button class="filter-btn" data-category="hoodies">HOODIES</button>
+            <button class="filter-btn" data-category="remeras">REMERAS</button>
+            <button class="filter-btn" data-category="jeans">JEANS</button>
+        </div>
+
+        <!-- PRODUCTOS -->
+        <section class="productos" id="products-grid">
+            <!-- Hoodies -->
+            <div class="producto" data-category="hoodies">
+                <div class="nuevo">NUEVO</div>
+                <img src="../img/blackhoodie.jpg" alt="Black Hoodie 22XCLUSIVE">
+                <div class="info">
+                    <h3>BLACK HOODIE "22XCLUSIVE"</h3>
+                    <div class="precio">$85.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $28.333,33</div>
+                    <button class="add-to-cart" data-product-id="1">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="hoodies">
+                <div class="nuevo">NUEVO</div>
+                <img src="../img/blackhoodie.jpg" alt="Grey Hoodie Urban">
+                <div class="info">
+                    <h3>GREY HOODIE "URBAN STYLE"</h3>
+                    <div class="precio">$78.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $26.000,00</div>
+                    <button class="add-to-cart" data-product-id="2">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="hoodies">
+                <img src="../img/blackhoodie.jpg" alt="White Hoodie Classic">
+                <div class="info">
+                    <h3>WHITE HOODIE "CLASSIC"</h3>
+                    <div class="precio">$72.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $24.000,00</div>
+                    <button class="add-to-cart" data-product-id="3">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <!-- Remeras -->
+            <div class="producto" data-category="remeras">
+                <div class="nuevo">NUEVO</div>
+                <img src="../img/remeranegra.jpg" alt="Remera Negra Doble Manga">
+                <div class="info">
+                    <h3>REMERA NEGRA DOBLE MANGA PESADA "NO…"</h3>
+                    <div class="precio">$66.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $22.000,00</div>
+                    <button class="add-to-cart" data-product-id="4">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="remeras">
+                <img src="../img/remeranegra.jpg" alt="Remera Blanca Basic">
+                <div class="info">
+                    <h3>REMERA BLANCA "BASIC"</h3>
+                    <div class="precio">$45.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $15.000,00</div>
+                    <button class="add-to-cart" data-product-id="5">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="remeras">
+                <div class="nuevo">NUEVO</div>
+                <img src="../img/remeranegra.jpg" alt="Remera Gris Graphic">
+                <div class="info">
+                    <h3>REMERA GRIS "GRAPHIC DESIGN"</h3>
+                    <div class="precio">$58.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $19.333,33</div>
+                    <button class="add-to-cart" data-product-id="6">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="remeras">
+                <img src="../img/remeranegra.jpg" alt="Remera Negra Oversized">
+                <div class="info">
+                    <h3>REMERA NEGRA "OVERSIZED"</h3>
+                    <div class="precio">$52.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $17.333,33</div>
+                    <button class="add-to-cart" data-product-id="7">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <!-- Jeans -->
+            <div class="producto" data-category="jeans">
+                <div class="nuevo">NUEVO</div>
+                <img src="../img/blackhoodie.jpg" alt="Jeans Slim Fit">
+                <div class="info">
+                    <h3>JEANS "SLIM FIT" AZUL</h3>
+                    <div class="precio">$95.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $31.666,67</div>
+                    <button class="add-to-cart" data-product-id="8">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="jeans">
+                <img src="../img/blackhoodie.jpg" alt="Jeans Relaxed Fit">
+                <div class="info">
+                    <h3>JEANS "RELAXED FIT" NEGRO</h3>
+                    <div class="precio">$88.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $29.333,33</div>
+                    <button class="add-to-cart" data-product-id="9">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="jeans">
+                <div class="nuevo">NUEVO</div>
+                <img src="../img/blackhoodie.jpg" alt="Jeans Mom Fit">
+                <div class="info">
+                    <h3>JEANS "MOM FIT" CLARO</h3>
+                    <div class="precio">$92.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $30.666,67</div>
+                    <button class="add-to-cart" data-product-id="10">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+
+            <div class="producto" data-category="jeans">
+                <img src="../img/blackhoodie.jpg" alt="Jeans Wide Leg">
+                <div class="info">
+                    <h3>JEANS "WIDE LEG" AZUL OSCURO</h3>
+                    <div class="precio">$98.000,00</div>
+                    <div class="cuotas">3 cuotas sin interés de $32.666,67</div>
+                    <button class="add-to-cart" data-product-id="11">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER PROMOCIONAL -->
+        <section class="promo-banner">
+            <div class="promo-content">
+                <h2>¡ENVÍO GRATIS!</h2>
+                <p>En compras superiores a $50.000</p>
+                <button onclick="window.location.href='cart.html'">VER CARRITO</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-nav">
+                <h4>NAVEGACIÓN</h4>
+                <a href="../index.html">Inicio</a>
+                <a href="products.html">Productos</a>
+                <a href="contact.html">Contacto</a>
+                <a href="terms.html">Términos y condiciones</a>
+                <a href="sizes.html">Guía de talles</a>
+            </div>
+            <div class="footer-social">
+                <h4>REDES SOCIALES</h4>
+                <a href="https://instagram.com/ind.casbas" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>NEWSLETTER</h4>
+                <input type="email" placeholder="Email" id="newsletter-email">
+                <button id="newsletter-btn">&#9993;</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE AUTENTICACIÓN -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="login-form" class="auth-form">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <p>¿No tienes cuenta? <a href="#" id="show-register">Crear cuenta</a></p>
+            </div>
+            <div id="register-form" class="auth-form" style="display: none;">
+                <h2>Crear Cuenta</h2>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Confirmar contraseña" required>
+                    <button type="submit">Crear Cuenta</button>
+                </form>
+                <p>¿Ya tienes cuenta? <a href="#" id="show-login">Iniciar sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

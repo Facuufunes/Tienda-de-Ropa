@@ -1,0 +1,229 @@
+/* ===== SIZES PAGE STYLES ===== */
+
+.sizes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.sizes-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.sizes-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sizes-header p {
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.sizes-content {
+    line-height: 1.6;
+}
+
+.sizes-section {
+    margin-bottom: 50px;
+}
+
+.sizes-section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Measurement Guide */
+.measurement-guide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.measurement-item {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.measurement-item h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.measurement-item p {
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+/* Size Tables */
+.size-table-container,
+.conversion-table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.size-table,
+.conversion-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.size-table th,
+.size-table td,
+.conversion-table th,
+.conversion-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.size-table th,
+.conversion-table th {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.size-table td,
+.conversion-table td {
+    color: #ccc;
+}
+
+.size-table tr:hover,
+.conversion-table tr:hover {
+    background: #1a1a1a;
+}
+
+/* Tips */
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tip {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tip h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tip p {
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+/* Help Section */
+.help-section {
+    text-align: center;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.help-section p {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+.contact-link span {
+    font-size: 1.2em;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .sizes-container {
+        padding: 20px 15px;
+    }
+    
+    .sizes-header h1 {
+        font-size: 2em;
+    }
+    
+    .sizes-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .measurement-guide,
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .size-table,
+    .conversion-table {
+        font-size: 0.9em;
+    }
+    
+    .size-table th,
+    .size-table td,
+    .conversion-table th,
+    .conversion-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sizes-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .sizes-section h2 {
+        font-size: 1.3em;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+    }
+}

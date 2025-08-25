@@ -1,0 +1,44 @@
+{
+  "name": "ind-casbas-store",
+  "version": "1.0.0",
+  "description": "Tienda de ropa online IND.CASBAS con funcionalidades modernas de e-commerce",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'Build completed'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "ecommerce",
+    "tienda",
+    "ropa",
+    "streetwear",
+    "hoodies",
+    "remeras",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "IND.CASBAS Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indcasbas/store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/indcasbas/store/issues"
+  },
+  "homepage": "https://indcasbas.com",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
